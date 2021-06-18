@@ -46,8 +46,27 @@ b = [1, 2, 3]
 p = a is b
 print(" a is b that is %r " % p)
 
-dic = { 1:"hello",2:"world"}
+dic = {1: "hello", 2: "world"}
 number1isInDic = 1 in dic
 hisInDic = "H" in dic
-print("1 is in dic is %r" %number1isInDic)
-print("H is in dic is %r" %hisInDic)
+print("1 is in dic is %r" % number1isInDic)
+print("H is in dic is %r" % hisInDic)
+
+
+# Using str.format() function to format output
+# Syntax : { } .format(value)
+# Parameters :
+# (value) : Can be an integer, floating point numeric constant, string, characters or even variables.
+# Returntype : Returns a formatted string with the value passed as parameter in the placeholder position.
+
+
+name = "beautiful mind"
+obj = "fantastic"
+
+print("{} is a {} movie".format(name, obj))
+
+print("{1} is using to talk about  the movie {0} ".format(name, obj))
+
+# {} is the placeholder for args in format function
+# : is seperator for index number and output style
+print("{:^4.2} world".format("hello"))
